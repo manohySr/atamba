@@ -1,34 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { ButtonMenu, ButtonDefault } from "./components/button/button"
+import Folder from "./components/folder/folder";
+import SearchBar from "./components/search/search";
+
+import IconFiles from "./assets/images/file-earmark-text.svg";
+import IconClock from "./assets/images/clock.svg";
+import IconTrash from "./assets/images/trash.svg";
+import IconStar from "./assets/images/star.svg";
+import IconShare from "./assets/images/share.svg";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+  <>
+  <ButtonMenu name="My categories" iconSrc={IconFiles}/>
+  <ButtonMenu name="Recent" iconSrc={IconClock}/>
+  <ButtonMenu name="Share" iconSrc={IconShare}/>
+  <ButtonMenu name="Stared" iconSrc={IconStar}/>
+  <ButtonMenu name="Trash" iconSrc={IconTrash}/>
+  <ButtonDefault name="Upgrade" />
+  <Folder name="Projects"/>
+  <SearchBar />
+  </>
   )
 }
 

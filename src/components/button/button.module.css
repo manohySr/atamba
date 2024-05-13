@@ -1,0 +1,48 @@
+.button {
+    margin: 2rem;
+
+    border: none;
+    background-color: var(--back-bg);
+    color: var(--white-font);
+    display: inline-block;
+    border-radius: .7rem;
+    padding: 1rem;
+    
+    display: flex;
+    align-items: center;
+    width: 17rem;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--blue-button);
+}
+
+.icon_container {
+    color: var(--white-font);
+    margin-right: 1rem;
+}
+
+.icon {
+    width: 1.8rem;
+    filter: invert(100%);
+}
+
+/* Button default */
+.button_default {
+    margin: 2rem;
+
+    border: none;
+
+    background-color: var(--blue-button);
+    width: 17rem;
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem 1rem;
+    border-radius: .7rem;
+    color: var(--white-font);
+
+    cursor: pointer;
+}
