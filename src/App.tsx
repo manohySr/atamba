@@ -1,9 +1,11 @@
 import Apk from "./pages/apk/apk";
 
 function App() {
-  return <>
-    <Apk />
-  </>;
+  return (
+    <div className="container">
+      <Apk />
+    </div>
+  );
 }
 
 export default App;

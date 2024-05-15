@@ -4,6 +4,7 @@
     --flou-bg: rgba(42,43,47,255);
     --black-bg: rgba(15,15,15,255);
     --grey-bg: rgba(22,23,25,255);
+    --grey-font: rgb(175, 175, 175);
 }
 
 html,
@@ -11,10 +12,19 @@ body {
     font-family: Montserrat, sans-serif;
     line-height: 1.6;
     font-size: 62.5%;
-    background-color: var(--grey-bg);
     color: var(--white-font);
 }
 
+body {
+    background-color: var(--grey-bg);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
 
 *,
 *::before,

@@ -2,12 +2,29 @@
     display: flex;
     padding: 2rem;
     font-size: 1.2rem;
-    height: 100vh;
     background-color: var(--black-bg);
+    border-radius: 1rem;
 }
 
 .menu {
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line {
+    background-color: var(--flou-bg);
+    height: .2rem;
+}
+
+.menu_bottom {
+    margin-bottom: 2rem;
+}
+
+.logout {
+    display: flex;
+    justify-content: center;
 }
 
 .application {
@@ -50,4 +67,50 @@
 .storage {
     display: flex;
     justify-content: center;
+}
+
+/* explore_file */
+.container_explorer {
+    overflow-y: auto;
+    height: 40vh;
+    padding-bottom: 1rem;
+}
+
+.explore_file {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    margin: 0 2rem;
+}
+
+.explore_file_title {
+    font-size: 1.4rem;
+    color: var(--grey-font);
+}
+
+.explore_file_title:not(.filename) {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.files {
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.files:hover {
+    background-color: var(--flou-bg);
+}
+
+.filename {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+    font-size: 1.4rem;
+}
+
+.filename img {
+    width: 1.8rem;
 }
