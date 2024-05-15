@@ -2,7 +2,8 @@
     --blue-button: rgba(78,83,185,255);
     --white-font: rgb(235,235,247);
     --flou-bg: rgba(42,43,47,255);
-    --back-bg: rgba(15,15,15,255);
+    --black-bg: rgba(15,15,15,255);
+    --grey-bg: rgba(22,23,25,255);
 }
 
 html,
@@ -10,7 +11,7 @@ body {
     font-family: Montserrat, sans-serif;
     line-height: 1.6;
     font-size: 62.5%;
-    background-color: var(--back-bg);
+    background-color: var(--grey-bg);
     color: var(--white-font);
 }
 
@@ -25,5 +26,5 @@ body {
 
 .font {
     color: var(--white-font);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }

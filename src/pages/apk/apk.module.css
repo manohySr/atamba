@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    padding: 2rem;
+    font-size: 1.2rem;
+    height: 100vh;
+    background-color: var(--black-bg);
+}
+
+.menu {
+    width: 20%;
+}
+
+.application {
+    display: flex;
+    background-color: var(--grey-bg);
+    width: 80%;
+    border-radius: 2rem;
+    margin: 1rem;
+    outline: none;
+}
+
+.explorer {
+    width: 70%;
+}
+
+.explorer_search {
+    margin: 2rem;
+}
+
+.title {
+    font-size: 1.6rem;
+    padding-left: 2rem;
+}
+
+.folder {
+    margin: 2rem 0;
+    padding: 2rem 0;
+    border-top: .5rem solid var(--black-bg);
+    border-bottom: .5rem solid var(--black-bg);
+}
+
+.folder_list {
+    display: flex;
+}
+
+.user {
+    width: 30%;
+}
+
+.storage {
+    display: flex;
+    justify-content: center;
+}
